@@ -1,0 +1,10 @@
+version: "2.0"
+
+services:
+  neo4j4:
+    image: armdocker.rnd.ericsson.se/proj_oss_releases/enm/neo4j4
+    container_name: neo4j4
+    ports:
+      - '7474:7474'
+      - '7473:7473'
+      - '7687:7687'

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+*******************************************************************************
+* COPYRIGHT Ericsson LMI 2016. All rights reserved.
+*
+* No part of this document may be reproduced in any form without the
+* written permission of the copyright owner.The contents of this document
+* are subject to revision without notice due to continued progress in
+* methodology, design and manufacturing. Ericsson shall have no liability
+* for any error or damage of any kind resulting from the use of this document.
+*
+*******************************************************************************
+
+
+--><ns2:PrimaryTypeDefinition xmlns:ns1="urn:com:ericsson:schema:xml:oss:oss_common" xmlns:ns2="urn:com:ericsson:schema:xml:oss:dps_primarytype" xmlns:ns6="urn:com:ericsson:schema:xml:oss:dps_common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" hierarchyType="NORMAL" ns1:lifeCycle="CURRENT" ns1:name="DynamicAlarmAttributeInformation" ns1:ns="FM" ns1:version="1.0.1" readBehavior="INHERITED" writeBehavior="PERSIST">
+  <ns1:modelCreationInfo author="enmadm100" creationDate="Wed Apr 20 18:00:44 CEST 2016">
+    <ns1:designedModel className="com.ericsson.oss.services.models.alarm.DynamicAlarmAttributeInformation" componentId="alarmpersistencemodel-jar"/>
+  </ns1:modelCreationInfo>
+  <ns1:desc>DynamicAlarmAttributeInformation</ns1:desc>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="dynamicAlarmAttribute" sensitive="false">
+    <ns1:desc>dynamicAlarmAttribute</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+</ns2:PrimaryTypeDefinition>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+*******************************************************************************
+* COPYRIGHT Ericsson LMI 2016. All rights reserved.
+*
+* No part of this document may be reproduced in any form without the
+* written permission of the copyright owner.The contents of this document
+* are subject to revision without notice due to continued progress in
+* methodology, design and manufacturing. Ericsson shall have no liability
+* for any error or damage of any kind resulting from the use of this document.
+*
+*******************************************************************************
+
+
+--><ns2:PrimaryTypeDefinition xmlns:ns1="urn:com:ericsson:schema:xml:oss:oss_common" xmlns:ns2="urn:com:ericsson:schema:xml:oss:dps_primarytype" xmlns:ns6="urn:com:ericsson:schema:xml:oss:dps_common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" hierarchyType="NORMAL" ns1:lifeCycle="CURRENT" ns1:name="OpenAlarm" ns1:ns="FM" ns1:version="1.0.1" readBehavior="INHERITED" writeBehavior="PERSIST">
+  <ns1:modelCreationInfo author="enmadm100" creationDate="Wed Apr 20 18:00:44 CEST 2016">
+    <ns1:designedModel className="com.ericsson.oss.services.models.alarm.OpenAlarm" componentId="alarmpersistencemodel-jar"/>
+  </ns1:modelCreationInfo>
+  <ns1:desc>OpenAlarm</ns1:desc>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="objectOfReference" sensitive="false">
+    <ns1:desc>objectOfReference</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="fdn" sensitive="false">
+    <ns1:desc>fdn</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="eventTime" sensitive="false">
+    <ns1:desc>eventTime</ns1:desc>
+    <ns1:type xsi:type="ns1:timestampType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="insertTime" sensitive="false">
+    <ns1:desc>insertTime</ns1:desc>
+    <ns1:type xsi:type="ns1:timestampType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="lastUpdated" sensitive="false">
+    <ns1:desc>lastUpdated</ns1:desc>
+    <ns1:type xsi:type="ns1:timestampType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="presentSeverity" sensitive="false">
+    <ns1:desc>presentSeverity</ns1:desc>
+    <ns1:type modelUrn="//FM/EventSeverity/1.0.1" xsi:type="ns1:enumRefType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="probableCause" sensitive="false">
+    <ns1:desc>probableCause</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="specificProblem" sensitive="false">
+    <ns1:desc>specificProblem</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="alarmNumber" sensitive="false">
+    <ns1:desc>alarmNumber</ns1:desc>
+    <ns1:type xsi:type="ns1:longType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="eventType" sensitive="false">
+    <ns1:desc>eventType</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="backupObjectInstance" sensitive="false">
+    <ns1:desc>backupObjectInstance</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="recordType" sensitive="false">
+    <ns1:desc>recordType</ns1:desc>
+    <ns1:type modelUrn="//FM/AlarmRecordType/1.0.1" xsi:type="ns1:enumRefType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="backupStatus" sensitive="false">
+    <ns1:desc>backupStatus</ns1:desc>
+    <ns1:type xsi:type="ns1:booleanType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="trendIndication" sensitive="false">
+    <ns1:desc>trendIndication</ns1:desc>
+    <ns1:type modelUrn="//FM/EventTrendIndication/1.0.1" xsi:type="ns1:enumRefType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="previousSeverity" sensitive="false">
+    <ns1:desc>previousSeverity</ns1:desc>
+    <ns1:type modelUrn="//FM/EventSeverity/1.0.1" xsi:type="ns1:enumRefType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="proposedRepairAction" sensitive="false">
+    <ns1:desc>proposedRepairAction</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="alarmId" sensitive="false">
+    <ns1:desc>alarmId</ns1:desc>
+    <ns1:type xsi:type="ns1:longType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="correlatedeventPOId" sensitive="false">
+    <ns1:desc>correlatedeventPOId</ns1:desc>
+    <ns1:type xsi:type="ns1:longType"/>
+    <ns1:default value="-2" xsi:type="ns1:longValue"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="alarmState" sensitive="false">
+    <ns1:desc>alarmState</ns1:desc>
+    <ns1:type modelUrn="//FM/EventState/1.0.1" xsi:type="ns1:enumRefType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="lastAlarmOperation" sensitive="false">
+    <ns1:desc>lastAlarmOperation</ns1:desc>
+    <ns1:type modelUrn="//FM/LastAlarmOperation/1.0.1" xsi:type="ns1:enumRefType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="ceaseTime" sensitive="false">
+    <ns1:desc>ceaseTime</ns1:desc>
+    <ns1:type xsi:type="ns1:timestampType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="ceaseOperator" sensitive="false">
+    <ns1:desc>ceaseOperator</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="ackTime" sensitive="false">
+    <ns1:desc>ackTime</ns1:desc>
+    <ns1:type xsi:type="ns1:timestampType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="ackOperator" sensitive="false">
+    <ns1:desc>ackOperator</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="syncState" sensitive="false">
+    <ns1:desc>syncState</ns1:desc>
+    <ns1:type xsi:type="ns1:booleanType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="historyAlarmPOId" sensitive="false">
+    <ns1:desc>historyAlarmPOId</ns1:desc>
+    <ns1:type xsi:type="ns1:longType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="commentText" sensitive="false">
+    <ns1:desc>commentText</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="commentTime" sensitive="false">
+    <ns1:desc>commentTime</ns1:desc>
+    <ns1:type xsi:type="ns1:timestampType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="commentOperator" sensitive="false">
+    <ns1:desc>commentOperator</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="repeatCount" sensitive="false">
+    <ns1:desc>repeatCount</ns1:desc>
+    <ns1:type xsi:type="ns1:integerType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="oscillationCount" sensitive="false">
+    <ns1:desc>oscillationCount</ns1:desc>
+    <ns1:type xsi:type="ns1:integerType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="ceaseRecordType" sensitive="false">
+    <ns1:desc>ceaseRecordType</ns1:desc>
+    <ns1:type modelUrn="//FM/AlarmRecordType/1.0.1" xsi:type="ns1:enumRefType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="visibility" sensitive="false">
+    <ns1:desc>visibility</ns1:desc>
+    <ns1:type xsi:type="ns1:booleanType"/>
+    <ns1:default value="true" xsi:type="ns1:booleanValue"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="processingType" sensitive="false">
+    <ns1:desc>processingType</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+    <ns1:default value="NOT_SET" xsi:type="ns1:stringValue"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="fmxGenerated" sensitive="false">
+    <ns1:desc>fmxGenerated</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+    <ns1:default value="NOT_SET" xsi:type="ns1:stringValue"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="type" sensitive="false">
+    <ns1:desc>type</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+    <ns1:default value="FM_AlarmHistory" xsi:type="ns1:stringValue"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="problemText" sensitive="false">
+    <ns1:desc>problemText</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="problemDetail" sensitive="false">
+    <ns1:desc>problemDetail</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="additionalInformation" sensitive="false">
+    <ns1:desc>additionalInformation</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="manualCease" sensitive="false">
+    <ns1:desc>manualCease</ns1:desc>
+    <ns1:type xsi:type="ns1:booleanType"/>
+    <ns1:default value="false" xsi:type="ns1:booleanValue"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="correlatedVisibility" sensitive="false">
+    <ns1:desc>correlatedVisibility</ns1:desc>
+    <ns1:type xsi:type="ns1:booleanType"/>
+    <ns1:default value="true" xsi:type="ns1:booleanValue"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="timeZone" sensitive="false">
+    <ns1:desc>timeZone</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:primaryTypeAttribute immutable="false" key="false" mandatory="false" ns1:lifeCycle="CURRENT" ns1:name="alarmingObject" sensitive="false">
+    <ns1:desc>alarmingObject</ns1:desc>
+    <ns1:type xsi:type="ns1:stringType"/>
+  </ns2:primaryTypeAttribute>
+  <ns2:changeEventHandling onCreateAssoc="" onCreatePo="" onDeleteAssoc="" onDeletePo="" onModifyAttr="PRIOR_VALUES NAMES VALUES"/>
+</ns2:PrimaryTypeDefinition>
